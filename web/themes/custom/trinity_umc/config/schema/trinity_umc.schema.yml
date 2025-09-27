@@ -1,0 +1,5 @@
+# Schema for the configuration files of the trinity_umc theme.
+
+trinity_umc.settings:
+  type: theme_settings
+  label: 'trinity_umc settings'

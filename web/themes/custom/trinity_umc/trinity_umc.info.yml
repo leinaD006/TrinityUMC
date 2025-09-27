@@ -1,0 +1,38 @@
+name: trinity_umc
+description: "trinity_umc theme based on <a href='https://www.drupal.org/project/radix' target='_blank'>Radix 6.x</a> and Bootstrap 5.x"
+screenshot: screenshot.png
+'alt text': 'trinity_umc theme screenshot'
+core_version_requirement: ^11
+engine: twig
+type: theme
+'base theme': radix
+starterkit: true
+'interface translation project': trinity_umc
+'interface translation server pattern': themes/custom/trinity_umc/translations/%language.po
+regions:
+  navbar_branding: 'Navbar branding'
+  navbar_left: 'Navbar left'
+  navbar_right: 'Navbar right'
+  header: Header
+  content: Content
+  page_bottom: 'Page bottom'
+  footer: Footer
+libraries:
+  - trinity_umc/style
+ckeditor5-stylesheets:
+  - build/css/main.style.css
+libraries-extend:
+  core/drupal.ajax:
+    - trinity_umc/drupal.ajax
+  core/drupal.checkbox:
+    - trinity_umc/drupal.checkbox
+  core/drupal.message:
+    - trinity_umc/drupal.message
+  core/drupal.progress:
+    - trinity_umc/drupal.progress
+  clientside_validation_jquery/cv.jquery.validate:
+    - trinity_umc/jquery.validate
+version: 6.0.2
+project: radix
+datestamp: 1746711574
+generator: 'radix_starterkit:6.0.2'
