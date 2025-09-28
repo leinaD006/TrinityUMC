@@ -5,7 +5,14 @@
 .idea
 .vscode
 node_modules
+
+# Ignore compiled CSS and JS files
 build
+*.css
+*.css.map
+*.js
+*.js.map
+!_*.js
 
 # local env files
 .env.local
