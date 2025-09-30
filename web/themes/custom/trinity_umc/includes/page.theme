@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\config_pages\Entity\ConfigPages;
+
+/**
+ * Implements theme_preprocess_page().
+ */
+function trinity_umc_preprocess_page(&$variables)
+{
+    // Add footer data to all pages.
+    $configPage = ConfigPages::config('contact_information');
+    $variables['phone_number'] = $configPage->get('field_phone_number')->value;
+    $variables['email'] = $configPage->get('field_email_address')->value;
+    $variables['address'] = $configPage->get('field_street_address')->value;
+    $variables['city'] = $configPage->get('field_city')->value;
+    $variables['state'] = $configPage->get('field_state_abbreviation')->value;
+    $variables['zip_code'] = $configPage->get('field_zip_code')->value;
+    $variables['worship_services'] = $configPage->get('field_worship_services')->getValue();
+    $variables['site_logo'] = theme_get_setting('logo.url');
+
+}
