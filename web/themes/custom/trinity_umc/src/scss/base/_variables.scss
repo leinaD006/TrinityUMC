@@ -19,3 +19,11 @@ $nav-link-font-size: 1.25rem;
 $navbar-brand-font-size: $nav-link-font-size;
 
 // $vr-border-width: 2px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px,
+);
