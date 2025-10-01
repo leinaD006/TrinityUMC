@@ -16,6 +16,14 @@
     {% include 'radix:page-navigation' %}
   {% endblock %}
 
+  {% block banner %}
+    {% if page.banner %}
+      <div class="page__banner">
+        {{ page.banner }}
+      </div>
+    {% endif %}
+  {% endblock %}
+
   {% block page_content %}
     {% include 'radix:page-content' with {
       page_main_utility_classes: ['py-5'],
