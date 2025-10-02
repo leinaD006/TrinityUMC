@@ -1,7 +1,11 @@
 {
     "/build/js/main.script.js": "/build/js/main.script.js",
-    "/components/page/page.css": "/components/page/page.css",
-    "/components/page-footer/page-footer.css": "/components/page-footer/page-footer.css",
     "/components/navbar-brand/navbar-brand.css": "/components/navbar-brand/navbar-brand.css",
-    "/build/css/main.style.css": "/build/css/main.style.css"
+    "/components/image-directory/image-directory.css": "/components/image-directory/image-directory.css",
+    "/components/directory-item/directory-item.css": "/components/directory-item/directory-item.css",
+    "/components/banner/banner.css": "/components/banner/banner.css",
+    "/build/css/main.style.css": "/build/css/main.style.css",
+    "/components/page/page.css": "/components/page/page.css",
+    "/components/page-navigation/page-navigation.css": "/components/page-navigation/page-navigation.css",
+    "/components/page-footer/page-footer.css": "/components/page-footer/page-footer.css"
 }
